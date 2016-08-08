@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MiscApp.Cerner">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAIAIAAAAAABAAAAAAAAAABAAABAAAAAAgAAAAACAEA=</HashCode>
+      <FileName>Class_Repository\Cerner.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MiscApp.Attributes">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAQAAAAAAAEACAAAAAAgAAAAAA=</HashCode>
+      <FileName>Class_Repository\Attributes.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MiscApp.server">
+    <Position X="2.25" Y="3" Width="2" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ABAAABACkIAAAgJEAQAgAAAASACAQABSOAAEAAwACQA=</HashCode>
+      <FileName>Class_Repository\server.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MiscApp.Password">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAIAAAAAAIAAAEAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Class_Repository\Password.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MiscApp.AdamRepository">
+    <Position X="4.5" Y="3" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAgAAAAAAAAAAEAAAACAAAAAACAAA=</HashCode>
+      <FileName>Class_Repository\AdamRepository.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

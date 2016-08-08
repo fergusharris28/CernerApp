@@ -1,0 +1,10 @@
+﻿# MiscApp configuation File
+Serverlist:
+  Servername=tstoly01 attr=LDAP sys=Olympus env=Nonprod
+  Servername=prdoly01 attr=LDAP sys=Olympus env=Prod
+  Servername=tstoly07 attr=LDAP sys=Olympus env=Nonprod
+  Servername=prdoly07 attr=LDAP sys=Olympus env=Prod
+End Serverlist
+CernerHome:
+  URL=\\euh\ehc\apps\prd-mil\Cernshare
+End CernerHome
