@@ -23,7 +23,6 @@ Public Class Form1
                     Me.OlyLDAPComboBox.Items.Add(serverX.Servername)
                 End If
             Next
-
             ' Add any initialization after the InitializeComponent() call.
         End If
     End Sub
@@ -41,6 +40,7 @@ Public Class Form1
             For Each serverX As server In ServerList.CernerOlympus
                 If serverX.Servername = OlyLDAPComboBox.SelectedItem.ToString Then
                     CerEnvLabel.Text = serverX.ServerEnvironment
+                    Environment = changeEnv()
                     If serverX.ServerType = "LDAP" Then
                         Dim load = serverX.getLoginInfo()
                         If load = False Then
@@ -162,4 +162,30 @@ Public Class Form1
 
         searcher.Dispose()
     End Sub
+
+    Private Function changeEnv() As Integer
+        Dim envNum As Integer
+        Dim EnvTbl As New emorycernerappDataSet.oly_envDataTable
+        Dim EnvAdapter As emorycernerappDataSetTableAdapters.oly_envTableAdapter
+
+        EnvAdapter = New emorycernerappDataSetTableAdapters.oly_envTableAdapter
+        EnvTbl = EnvAdapter.GetData(Me.CerEnvLabel.Text)
+
+        If EnvTbl.Count <> 0 Then
+            Dim DataRw As DataRow
+            DataRw = EnvTbl.Rows.Item(0)
+            envNum = DataRw.Item(0)
+
+        Else
+            EnvAdapter.InsertEnvironment(Me.CerEnvLabel.Text)
+            EnvTbl = New emorycernerappDataSet.oly_envDataTable
+            EnvTbl = EnvAdapter.GetData(Me.CerEnvLabel.Text)
+            Dim DataRw As DataRow
+            DataRw = EnvTbl.Rows.Item(0)
+            envNum = DataRw.Item(0)
+        End If
+
+        Return envNum
+    End Function
+
 End Class

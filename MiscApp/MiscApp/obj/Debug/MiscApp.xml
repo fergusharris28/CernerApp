@@ -21,12 +21,12 @@ Represents a strongly typed in-memory cache of data.
 Represents the strongly named DataTable class.
 </summary>
 </member>
-<member name="T:MiscApp.emorycernerappDataSet.serverDataTable">
+<member name="T:MiscApp.emorycernerappDataSet.oly_envDataTable">
 <summary>
 Represents the strongly named DataTable class.
 </summary>
 </member>
-<member name="T:MiscApp.emorycernerappDataSet.server_loginDataTable">
+<member name="T:MiscApp.emorycernerappDataSet.serverDataTable">
 <summary>
 Represents the strongly named DataTable class.
 </summary>
@@ -36,7 +36,17 @@ Represents the strongly named DataTable class.
 Represents the strongly named DataTable class.
 </summary>
 </member>
+<member name="T:MiscApp.emorycernerappDataSet.server_loginDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
 <member name="T:MiscApp.emorycernerappDataSet.loginRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:MiscApp.emorycernerappDataSet.oly_envRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
@@ -46,12 +56,12 @@ Represents strongly named DataRow class.
 Represents strongly named DataRow class.
 </summary>
 </member>
-<member name="T:MiscApp.emorycernerappDataSet.server_loginRow">
+<member name="T:MiscApp.emorycernerappDataSet.disconnected_serversRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
 </member>
-<member name="T:MiscApp.emorycernerappDataSet.disconnected_serversRow">
+<member name="T:MiscApp.emorycernerappDataSet.server_loginRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
@@ -61,12 +71,12 @@ Represents strongly named DataRow class.
 Row event argument class
 </summary>
 </member>
-<member name="T:MiscApp.emorycernerappDataSet.serverRowChangeEvent">
+<member name="T:MiscApp.emorycernerappDataSet.oly_envRowChangeEvent">
 <summary>
 Row event argument class
 </summary>
 </member>
-<member name="T:MiscApp.emorycernerappDataSet.server_loginRowChangeEvent">
+<member name="T:MiscApp.emorycernerappDataSet.serverRowChangeEvent">
 <summary>
 Row event argument class
 </summary>
@@ -76,7 +86,17 @@ Row event argument class
 Row event argument class
 </summary>
 </member>
+<member name="T:MiscApp.emorycernerappDataSet.server_loginRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
 <member name="T:MiscApp.emorycernerappDataSetTableAdapters.loginTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:MiscApp.emorycernerappDataSetTableAdapters.oly_envTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
@@ -86,12 +106,12 @@ Represents the connection and commands used to retrieve and save data.
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member>
-<member name="T:MiscApp.emorycernerappDataSetTableAdapters.server_loginTableAdapter">
+<member name="T:MiscApp.emorycernerappDataSetTableAdapters.disconnected_serversTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member>
-<member name="T:MiscApp.emorycernerappDataSetTableAdapters.disconnected_serversTableAdapter">
+<member name="T:MiscApp.emorycernerappDataSetTableAdapters.server_loginTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>

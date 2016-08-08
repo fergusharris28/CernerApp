@@ -177,18 +177,21 @@ Public Class server
     Function writeToDB() As Boolean
         Dim serverTbl As New emorycernerappDataSet.serverDataTable
         Dim LoginTbl As New emorycernerappDataSet.loginDataTable
+
         Dim serverAdapter As emorycernerappDataSetTableAdapters.serverTableAdapter
         Dim loginAdapter As emorycernerappDataSetTableAdapters.loginTableAdapter
+
         Dim test As Boolean = False
         Dim ID As Int16
 
         serverAdapter = New emorycernerappDataSetTableAdapters.serverTableAdapter
         loginAdapter = New emorycernerappDataSetTableAdapters.loginTableAdapter
+
         Try
             If ServerType = "LDAP" Then
-                serverAdapter.ServerLDAPInsertQuery(Servername, ServerIP.ToString, "1")
+                serverAdapter.ServerLDAPInsertQuery(Servername, ServerIP.ToString, "1", Environment)
             Else
-                serverAdapter.ServerLDAPInsertQuery(Servername, ServerIP.ToString, "0")
+                serverAdapter.ServerLDAPInsertQuery(Servername, ServerIP.ToString, "0", Environment)
             End If
             serverAdapter.FillBy(serverTbl, Servername)
             If serverTbl.Count <> 0 Then
@@ -217,7 +220,7 @@ Public Class server
         Try
             serverAdapter.FillBy(serverTbl, Servername)
             If serverTbl.Count = 0 Then
-                serverAdapter.ServerInsertAppServerQuery(Servername, ServerIP.ToString, Dtm, "0")
+                serverAdapter.ServerInsertAppServerQuery(Servername, ServerIP.ToString, Dtm, "0", Environment)
             Else
                 serverAdapter.UpdateDTMQuery(Dtm, Servername)
             End If
